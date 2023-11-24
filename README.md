@@ -1,5 +1,7 @@
 # Assignment 3
 
+## 1 Spark Streaming with Real Time Data and Kafka
+
 Start Kafka
 ```bash
 cd kafka
