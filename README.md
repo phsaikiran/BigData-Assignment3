@@ -18,6 +18,7 @@ Start pyspark
 ```bash
 pyspark
 ```
+- Add Reddit API credentials to Reddit.ipynb
 
 - Run Reddit.ipynb. Wait for topic1 streaming
 
