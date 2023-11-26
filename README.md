@@ -8,25 +8,31 @@ cd kafka
 docker-compose up -d
 ```
 
+- You can monitor the kafka cluster at http://localhost:9021/clusters
+
 - Start ELK Stack
 ```bash
 cd elk
 docker-compose up -d
 ```
 
+- You can login to kibana at http://localhost:5601/app/home using username=elastic and password=changeme
+
 Start pyspark
 ```bash
 pyspark
 ```
-- Add Reddit API credentials to Reddit.ipynb
+- Add Reddit API client ID and client secret to Reddit.ipynb
 
-- Run Reddit.ipynb. Wait for topic1 streaming
+- Run reddit.ipynb. Wait for data to be streamed to topic1
 
 - Run Spark.ipynb. Data will be streamed to topic2
 
 - Logstash is configured to read from topic2 and write to elasticsearch
 
-- Kibana visualization is available at http://localhost:5601
+- Add index pattern in kibana for logstash-*
+
+- Visualization chart screenshots are in q1/screenshots folder
 
 ## Q2 Analyzing Social Networks using GraphX/GraphFrame
 
